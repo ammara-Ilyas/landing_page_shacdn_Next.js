@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/images/assets/portfolio/Logo.png";
+import { NavType } from "../types/Type";
 import { Button } from "@/components/ui/button";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
 function Header() {
   const [isOpened, setIsOpenedl] = useState(false);
 
-  const navLink = [
+  const navLink: NavType[] = [
     {
       name: "Home",
       path: "/",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/images/assets/portfolio/Logo (1).png";
 import Navlink from "../widgets/Navlink";
+import { IconType } from "../types/Type";
 import {
   FaInstagram,
   FaTwitter,
@@ -10,7 +11,7 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
-  const contactIcon = [
+  const contactIcon: IconType[] = [
     {
       link: "https://www.instagram.com",
       icon: <FaInstagram />,
