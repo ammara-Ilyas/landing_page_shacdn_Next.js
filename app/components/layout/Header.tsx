@@ -7,6 +7,7 @@ import { NavType } from "../types/Type";
 import { Button } from "@/components/ui/button";
 import { VscThreeBars } from "react-icons/vsc";
 import { RxCross2 } from "react-icons/rx";
+import Navlink from "../widgets/Navlink";
 function Header() {
   const [isOpened, setIsOpenedl] = useState(false);
 
@@ -56,7 +57,7 @@ function Header() {
               key={i}
               onClick={() => setIsOpenedl(!isOpened)}
             >
-              <Link href={item.path}>{item.name}</Link>
+              <Navlink path={item.path} name={item.name} />
             </li>
           ))}
         </ul>
