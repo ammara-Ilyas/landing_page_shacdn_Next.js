@@ -1,4 +1,4 @@
-export interface IconType {
+export interface IconsType {
   link: string;
   icon: JSX.Element;
 }
