@@ -6,3 +6,7 @@ export interface NavType {
   name: string;
   path: string;
 }
+export interface AboutType {
+  heading: string;
+  num: number;
+}
