@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
-
+import Hero from "./components/sections/Hero";
 export default function Home() {
   return (
-    <div className="h-screen grid place-items-center p-5">Hello Click me</div>
+    <>
+      <section>
+        <Hero />
+      </section>
+    </>
   );
 }

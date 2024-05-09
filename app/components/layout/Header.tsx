@@ -35,7 +35,7 @@ function Header() {
     },
   ];
   return (
-    <header className="bg-rose-200 text-black  font-bold grid grid-cols-9 items-center py-3 duration-75 sticky top-0 z-40">
+    <header className="bg-rose-200 text-black  font-bold grid grid-cols-9 items-center py-3 duration-75 sticky top-0 z-50">
       <div className="rounded-full hidden bg-red-500 absolute left-1/3 w-28 h-28 -top-3/4 z-100"></div>
       <div className="w-40 col-start-1 pl-10">
         <Image src={logo} alt="logo" className="w-full" />
@@ -66,7 +66,7 @@ function Header() {
       <div className="col-start-9 row-start-1 md:col-start-8 md:col-end-10 flex justify-center">
         <div className="hidden md:block ">
           <Button variant="hire" size="lg">
-            Portfolio
+            Hire me
           </Button>
         </div>
         <div className="block text-2xl md:hidden col-start-10 ml-8">
