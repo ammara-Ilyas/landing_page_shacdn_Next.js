@@ -59,12 +59,13 @@ function Portfolio() {
       <div className="  flex flex-col justify-center items-center  ">
         <div>
           <div className="absolute bg-rose-200 flex pt-10 items-center w-full  flex-col  h-[350px]">
-            <h1 className="text-4xl font-bold">My Portfolio</h1>
-            <p className="pt-4 w-3/4 mx-auto text-center md:w-3/5">
-              Explore my design services, from user interface and experience to
+            <TypographyH1 text="My Portfolio" />
+            <TypographyP
+              text=" Explore my design services, from user interface and experience to
               prototyping and testing. Let's craft exceptional digital
-              experiences together.
-            </p>
+              experiences together."
+              TailwindClass="pt-4 w-3/4 mx-auto text-center md:w-3/5"
+            />
           </div>
           <div className="relative mt-40 flex flex-wrap gap-16 justify-center pt-10 w-full mb-10">
             <CardDem data={portfolioData} />

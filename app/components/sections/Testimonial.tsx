@@ -1,13 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import background from "@/images/assets/portfolio/Background.png";
-import { MdArrowBackIos } from "react-icons/md";
-import { MdArrowForwardIos } from "react-icons/md";
 import profile from "@/images/assets/portfolio/testimonial.png";
-import Wrapper from "../layout/Wrapper";
 import CarouselDemo from "../shacdnCom/Testimonialsh";
 import TypographyH1 from "../shacdnCom/Heading";
-import TypographyP from "../shacdnCom/Para";
 function Testimonial() {
   const data = {
     paragraph:

@@ -22,8 +22,6 @@ interface CourselType {
 }
 
 const CarouselDemo: React.FC<CourselType> = ({ data }) => {
-  console.log(data);
-
   return (
     <Carousel className="w-3/4  mt-0 pt-0 ">
       <CarouselContent>

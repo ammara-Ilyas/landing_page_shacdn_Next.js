@@ -16,8 +16,15 @@ export interface SerPortType {
   heading: string;
   des: string;
   icon?: Element;
+  date?: string;
 }
 export interface SkillType {
   name: string;
   range: number;
+}
+export interface BlogType {
+  img: StaticImageData;
+  date: string;
+  heading: string;
+  des: string;
 }

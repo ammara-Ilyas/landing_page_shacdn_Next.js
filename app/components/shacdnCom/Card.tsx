@@ -3,6 +3,7 @@ import Image from "next/image";
 import TypographyH4 from "./Hading4";
 import { StaticImageData } from "next/image";
 import TypographyP from "./Para";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -23,7 +24,7 @@ const CardDem: React.FC<CardType> = ({ data }) => {
   return (
     <>
       {data.map((item, i) => (
-        <Card key={i}>
+        <Card key={i} className="">
           <CardHeader className=" flex justify-center items-center">
             <Image src={item.img} alt="img" className="" />
             <CardTitle></CardTitle>

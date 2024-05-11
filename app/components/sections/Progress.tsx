@@ -2,9 +2,8 @@
 import React from "react";
 import Wrapper from "../layout/Wrapper";
 import { SkillType } from "../types/Type";
+///////import shacdn compononet
 import TypographyH1 from "../shacdnCom/Heading";
-import TypographyH2 from "../shacdnCom/Heading2";
-import TypographyH4 from "../shacdnCom/Hading4";
 import TypographyP from "../shacdnCom/Para";
 import ProgressBar from "../shacdnCom/Progress";
 function Progress() {
@@ -50,12 +49,6 @@ function Progress() {
             <div className=" basis-full mx-auto sm:basis-5/12 " key={i}>
               <p>{item.name}</p>
               <div className="flex items-center border-2 justify-center gap-x-2">
-                {/* <div className="bg-slate-300 overflow-hidden	 h-3 rounded-md mt-2 w-11/12 justify-between items-center ">
-                  <div
-                    style={{ width: `${item.range}` }}
-                    className="bg-black  h-3 text-white text-sm rounded-md"
-                  ></div>{" "}
-                </div> */}
                 <ProgressBar width={item.range} />
                 <span className="ml-2">{item.range}</span>
               </div>
