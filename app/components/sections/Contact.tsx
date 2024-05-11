@@ -7,10 +7,11 @@ import { contactIcons } from "../types/ContactData";
 import TypographyH1 from "../shacdnCom/Heading";
 import TypographyP from "../shacdnCom/Para";
 import { Button } from "@/components/ui/button";
+import Form from "../widgets/Form";
 function Contact() {
   return (
     <Wrapper>
-      <div className="relative text-center border-2 bg-red-300 py-16">
+      <div className="relative text-center  bg-red-300 py-16">
         <div className="rounded-full bg-red-500 absolute top-2/4 -left-14 w-28 h-28  z-0"></div>
         <div className="flex gap-10  flex-col md:flex-row justify-center w-11/12  ml-3 ">
           <div className=" w-10/12 md:w-2/5 flex flex-col gap-4 text-left z-0">
@@ -39,15 +40,20 @@ function Contact() {
             <ul className="flex  w-1/3 justify-between  items-center text-base mt-3 ">
               {contactIcons &&
                 contactIcons.map((item, i) => (
-                  <li key={i} className=" bg-slate-50 p-1 rounded-full">
-                    <Link href={item.link} target="_blank">
-                      {item.icon}
+                  <li key={i} className=" bg-slate-100  rounded-full">
+                    <Link href={item.link} target="_blank" className="">
+                      {/* {item.icon} */}
+                      <Button variant="link" size="sm">
+                        {item.icon}
+                      </Button>
                     </Link>
                   </li>
                 ))}
             </ul>
           </div>
-          {/* <Form /> */}
+          {/* <div className="border-2 w-[45%]"> */}
+          <Form />
+          {/* </div> */}
         </div>
       </div>
     </Wrapper>
