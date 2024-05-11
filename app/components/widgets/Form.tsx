@@ -4,7 +4,7 @@ import TextareaDemo from "../shacdnCom/Textarea";
 import { Button } from "@/components/ui/button";
 function Form() {
   return (
-    <div className=" w-[45%] flex flex-col gap-5">
+    <div className="mx-auto w-3/4 md:w-[46%]  flex flex-col gap-5">
       <InputDemo text="Name" />
       <InputDemo text="Email" />
       <InputDemo text="Phone Number" />
