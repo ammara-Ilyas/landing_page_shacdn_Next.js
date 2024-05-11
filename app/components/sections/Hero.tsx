@@ -7,7 +7,7 @@ import TypographyP from "../shacdnCom/Para";
 function Hero() {
   return (
     <section className="flex flex-wrap flex-col sm:flex-row  w-full h-full justify-center items-center bg-rose-200 gap-3 pt-7 ">
-      <div className="  font-serif w-3/4  h-[45vh] flex justify-evenly gap-6 sm:gap-2 sm:w-5/12  md:w-2/5 lg:w-1/3 flex-col ">
+      <div className="  font-serif w-3/4  flex justify-evenly gap-6 sm:gap-2 sm:w-5/12  md:w-2/5 lg:w-1/3 flex-col ">
         <TypographyP text="UX Designer" />
         <div className="">
           <TypographyH2 text="Hi There, I'm" />

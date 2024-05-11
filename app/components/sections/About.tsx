@@ -40,11 +40,11 @@ function About() {
           <div className="  w-1/4 sm:1/3 " key={i}>
             <TypographyH1
               text={`${item.num.toString()}+`}
-              TailwindClass="text-rose-200 font-semibold text-6xl"
+              TailwindClass="text-rose-200 font-semibold text-4xl md:text-5xl "
             />
             <TypographyP
               text={`${item.heading}`}
-              TailwindClass="text-2xl font-bold  pt-3"
+              TailwindClass="text-2xl font-medium sm:font-semibold  pt-3"
             />
           </div>
         ))}
