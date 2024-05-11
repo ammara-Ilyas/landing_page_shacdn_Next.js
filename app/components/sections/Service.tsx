@@ -45,22 +45,6 @@ function Services() {
         />
 
         <div className="flex  lg:gap-3 justify-between items-center  w-5/6 lg:11/12 sm:w-11/12 ">
-          {/* {servicesData.map((item, i) => (
-            <div
-              key={i}
-              className="  flex gap-4 flex-col basis-4/5 lg:basis-56  justify-center items-center "
-            >
-              <Image src={item.img} alt="work" />
-              <div className="">
-                <TypographyH4 text={item.heading} />
-                <TypographyP
-                  text={item.des}
-                  TailwindClass="pt-3 w-10/12 mx-auto "
-                />
-              </div>
-            </div>
-          ))}
-           */}
           <CardDem data={servicesData} />
         </div>
       </div>
