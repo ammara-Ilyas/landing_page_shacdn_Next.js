@@ -4,7 +4,7 @@ function TextareaDemo() {
   return (
     <Textarea
       placeholder="Enter Message"
-      className=" p-2  bg-white placeholder:text-gray-400"
+      className=" p-2 py-[14px]  bg-white placeholder:text-gray-400"
     />
   );
 }

@@ -1,6 +1,5 @@
 import * as React from "react";
 import TypographyP from "./Para";
-import TypographyH4 from "./Hading4";
 import type { StaticImageData } from "next/image";
 import AvatarImg from "./Avatar";
 

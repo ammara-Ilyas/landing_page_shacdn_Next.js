@@ -11,15 +11,16 @@ import Form from "../widgets/Form";
 function Contact() {
   return (
     <Wrapper>
-      <div className="relative text-center  bg-red-300 py-16">
-        <div className="rounded-full bg-red-500 absolute top-2/4 -left-14 w-28 h-28  z-0"></div>
-        <div className="flex gap-10  flex-col md:flex-row justify-center w-11/12  ml-3 ">
+      <div className="relative text-center  bg-red-200 py-16">
+        <div className="rounded-full  bg-red-500 absolute top-2/4 -left-14 w-28 h-28  z-0"></div>
+        <div className="flex gap-10 ml-10 flex-col md:flex-row justify-center w-11/12  ">
           <div className=" w-10/12 md:w-2/5 flex flex-col gap-4 text-left z-0">
             <div>
               <TypographyH1 text="Get in Touch" />
               <TypographyP
                 text=" Have a question or a project in mind? I'd love to hear from you.
                 Let's chat and make something amazing together."
+                TailwindClass="w-11/12"
               />
             </div>
             <ul className="flex  flex-col ">

@@ -14,7 +14,7 @@ function Testimonial() {
   };
   return (
     // <Wrapper>
-    <div className="flex  items-center  bg-red-300 p-10 flex-col relative ">
+    <div className="flex  items-center  bg-red-200 p-10 flex-col relative ">
       <Image
         src={background}
         alt="red circle"

@@ -7,9 +7,9 @@ const InputDemo: React.FC<InputType> = (text) => {
 
   return (
     <Input
-      type={` ${text}`}
-      placeholder={`Enter ${text}`}
-      className="p-2 py-4 bg-white placeholder:text-gray-400"
+      type={text}
+      placeholder={text}
+      className="px-2 py-[14px] bg-white placeholder:text-gray-400"
     />
   );
 };
