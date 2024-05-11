@@ -24,9 +24,12 @@ const BlogCard: React.FC<CardType> = ({ data }) => {
   return (
     <>
       {data.map((item, i) => (
-        <Card key={i} className=" w-[30%] shadow-lg">
+        <Card
+          key={i}
+          className="mx-auto w-[75%] sm:w-[45%] md:w-[30%] lg:[28%]  shadow-lg"
+        >
           <CardHeader className=" flex justify-center items-center">
-            <Image src={item.img} alt="img" className="" />
+            <Image src={item.img} alt="img" className="w-full" />
             <CardTitle></CardTitle>
           </CardHeader>
           <CardContent>
@@ -35,7 +38,10 @@ const BlogCard: React.FC<CardType> = ({ data }) => {
               text={item.heading}
               TailwindClass="text-left "
             ></TypographyH4>
-            <TypographyP text={item.des} TailwindClass=" text-left h-28" />
+            <TypographyP
+              text={item.des}
+              TailwindClass=" text-left h-48 lg:h-32"
+            />
           </CardContent>
           <CardFooter>
             <div className="flex items-center justify-center text-xl ">

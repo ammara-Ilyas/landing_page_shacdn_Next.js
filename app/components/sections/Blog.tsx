@@ -44,7 +44,7 @@ function Blog() {
         />
 
         <div>
-          <div className="relative flex justify-center mt-10 w-4/5 mx-auto gap-14 mb-10">
+          <div className="relative flex flex-wrap justify-center mt-10 lg:w-[90%]  mx-auto gap-5 lg:gap-10 mb-10">
             <BlogCard data={blogData} />
           </div>
         </div>
