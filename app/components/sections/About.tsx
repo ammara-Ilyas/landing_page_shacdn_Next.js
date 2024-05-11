@@ -22,8 +22,8 @@ function About() {
   ];
   return (
     // <Wrapper>
-    <div className=" text-center items-center font-thin w-full mx-auto p-5  bg-slate-900  text-white relative ">
-      <div className=" absolute   -bottom-10  right-1/2 z-0">
+    <div className=" text-center items-center font-thin w-full mx-auto p-10  bg-slate-900  text-white relative ">
+      <div className=" absolute   bottom-0  right-1/2 z-0">
         <Image src={bg} alt="background" />
       </div>
       <TypographyH2 text="About Me" TailwindClass="text-white" />

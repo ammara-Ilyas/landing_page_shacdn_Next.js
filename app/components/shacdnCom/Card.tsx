@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import TypographyH4 from "./Hading4";
+import { StaticImageData } from "next/image";
+import TypographyP from "./Para";
 import {
   Card,
   CardContent,
@@ -7,25 +11,38 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-function CardDem() {
+interface CardType {
+  data: {
+    img: StaticImageData;
+    heading: string;
+    des: string;
+    icon: JSX.Element;
+  }[];
+}
+const CardDem: React.FC<CardType> = ({ data }) => {
   return (
     <>
-      <Card>
-        <CardHeader>
-          <CardDescription></CardDescription>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
-        </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
-      </Card>
+      {data.map((item, i) => (
+        <Card key={i}>
+          <CardHeader className=" flex justify-center items-center">
+            <Image src={item.img} alt="img" className="" />
+            <CardTitle></CardTitle>
+          </CardHeader>
+          <CardContent>
+            <TypographyH4 text={item.heading}></TypographyH4>
+          </CardContent>
+          <CardFooter className="flex justify-between items-center px-5 ">
+            <TypographyP text={item.des}></TypographyP>
+            {item.icon && (
+              <span className=" rounded-full bg-red-600 p-2 text-xl text-white">
+                {item.icon}
+              </span>
+            )}
+          </CardFooter>
+        </Card>
+      ))}
     </>
   );
-}
+};
 
 export default CardDem;
