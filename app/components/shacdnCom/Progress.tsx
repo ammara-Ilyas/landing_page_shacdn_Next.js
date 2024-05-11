@@ -1,18 +1,20 @@
+// "use client";
 "use client";
-import React, { useState, useEffect } from "react";
+
+import * as React from "react";
+
 import { Progress } from "@/components/ui/progress";
 interface ProgressType {
   width: number;
 }
 const ProgressBar: React.FC<ProgressType> = ({ width }) => {
-  const [progress, setProgress] = useState(width);
-  useEffect(() => {
-    const timer = setTimeout(() => setProgress(66), 500);
+  const [progress, setProgress] = React.useState(width);
+
+  React.useEffect(() => {
+    const timer = setTimeout(() => setProgress(width), 3000);
     return () => clearTimeout(timer);
   }, []);
-  console.log(width);
 
-  return <Progress value={progress} />;
+  return <Progress value={progress} className="w-full" />;
 };
-
 export default ProgressBar;

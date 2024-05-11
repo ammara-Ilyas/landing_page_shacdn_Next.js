@@ -48,7 +48,7 @@ function Progress() {
           {skill.map((item, i) => (
             <div className=" basis-full mx-auto sm:basis-5/12 " key={i}>
               <p>{item.name}</p>
-              <div className="flex items-center border-2 justify-center gap-x-2">
+              <div className="flex items-center gap-x-2">
                 <ProgressBar width={item.range} />
                 <span className="ml-2">{item.range}</span>
               </div>
