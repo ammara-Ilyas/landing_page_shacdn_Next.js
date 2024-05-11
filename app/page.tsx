@@ -5,6 +5,7 @@ import Portfolio from "./components/sections/Portfolio";
 import Progress from "./components/sections/Progress";
 import Testimonial from "./components/sections/Testimonial";
 import Blog from "./components/sections/Blog";
+import Contact from "./components/sections/Contact";
 export default function Home() {
   return (
     <>
@@ -15,6 +16,7 @@ export default function Home() {
       <Progress />
       <Testimonial />
       <Blog />
+      <Contact />
     </>
   );
 }

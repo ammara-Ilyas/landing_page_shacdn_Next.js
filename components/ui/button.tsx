@@ -18,7 +18,7 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 font-bold ",
+        link: "text-black underline-offset-4 font-bold ",
         hire: "py-2 px-7 bg-black text-white rounded-none",
         port: " text-blacks py-2 px-7 rounded-none  border-black	 bg-white",
       },
@@ -26,7 +26,7 @@ const buttonVariants = cva(
         default: "h-9 px-4 py-2",
         sm: "h-8 rounded-md px-3 text-xs",
         lg: "h-10  px-8",
-        icon: "h-9 w-9",
+        icon: "h-9 w-9 text-xl",
       },
     },
     defaultVariants: {

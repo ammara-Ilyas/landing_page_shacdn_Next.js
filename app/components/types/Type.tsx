@@ -28,3 +28,8 @@ export interface BlogType {
   heading: string;
   des: string;
 }
+
+export interface AddressType {
+  link: string;
+  icon: JSX.Element;
+}
