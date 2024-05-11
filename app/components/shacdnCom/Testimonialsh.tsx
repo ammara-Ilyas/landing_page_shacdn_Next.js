@@ -25,18 +25,18 @@ const CarouselDemo: React.FC<CourselType> = ({ data }) => {
   console.log(data);
 
   return (
-    <Carousel className="w-3/4   ">
+    <Carousel className="w-3/4  mt-0 pt-0 ">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
-            <div className="p-1  text-center ">
+            <div className="  text-center ">
               <Card>
-                <CardContent className="flex flex-col aspect-square   items-center justify-center p-6  w-full h-80">
+                <CardContent className="flex flex-col aspect-square   items-center justify-center  w-full h-80">
                   <TypographyP
                     text={data.paragraph}
                     TailwindClass="w-[75%] text-xl"
                   />
-                  <div className="flex items-center justify-center">
+                  <div className="flex items-center mt-5 justify-center">
                     <AvatarImg img={data.img} />
                     <TypographyP
                       text={data.name}

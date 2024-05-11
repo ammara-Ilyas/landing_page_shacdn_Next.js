@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { MdArrowForwardIos, MdArrowBackIosNew } from "react-icons/md";
 
 import useEmblaCarousel, {
@@ -208,7 +207,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full bg-red-300 border-none outline-none ",
+        "absolute  h-8 w-8  rounded-full bg-red-300 border-none outline-none ",
         orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
