@@ -44,8 +44,11 @@ function Services() {
           TailwindClass="py-5 w-10/12 mx-auto md:w-8/12"
         />
 
-        <div className="flex  lg:gap-3 justify-between items-center  w-5/6 lg:11/12 sm:w-11/12 ">
-          <CardDem data={servicesData} />
+        <div className="flex md:gap-1  flex-wrap lg:gap-3 justify-between items-center  w-5/6 md:w-full lg:w-11/12 sm:w-11/12 ">
+          <CardDem
+            data={servicesData}
+            Tailwindclass="w-3/4 mx-auto md:w-[23%]  h-1/3 sm:w-[45%]"
+          />
         </div>
       </div>
     </Wrapper>

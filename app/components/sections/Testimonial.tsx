@@ -20,7 +20,7 @@ function Testimonial() {
         alt="red circle"
         className="absolute top-0 left-1/2"
       />
-      <TypographyH1 text="Testimonials" TailwindClass="z-50" />
+      <TypographyH1 text="Testimonials" TailwindClass="z-30" />
       <CarouselDemo data={data} />
     </div>
   );

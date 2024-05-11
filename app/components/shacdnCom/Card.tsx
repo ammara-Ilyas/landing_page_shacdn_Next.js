@@ -19,21 +19,28 @@ interface CardType {
     des: string;
     icon: JSX.Element;
   }[];
+  Tailwindclass: string;
 }
-const CardDem: React.FC<CardType> = ({ data }) => {
+const CardDem: React.FC<CardType> = ({ data, Tailwindclass }) => {
   return (
     <>
       {data.map((item, i) => (
-        <Card key={i} className="">
+        <Card
+          key={i}
+          className={`${Tailwindclass}  flex gap-4 flex-col justify-center items-center`}
+        >
           <CardHeader className=" flex justify-center items-center">
             <Image src={item.img} alt="img" className="" />
             <CardTitle></CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="w-11/12">
             <TypographyH4 text={item.heading}></TypographyH4>
           </CardContent>
-          <CardFooter className="flex justify-between items-center px-5 ">
-            <TypographyP text={item.des}></TypographyP>
+          <CardFooter className="flex justify-between  w-11/12 items-center px-5 ">
+            <TypographyP
+              text={item.des}
+              TailwindClass="w-10/12 mx-auto "
+            ></TypographyP>
             {item.icon && (
               <span className=" rounded-full bg-red-600 p-2 text-xl text-white">
                 {item.icon}
